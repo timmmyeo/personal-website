@@ -5,6 +5,7 @@ import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 const theme = createMuiTheme({
   typography: {
     fontSize: 20,
+    fontFamily: 'Open Sans',
   },
 });
 
@@ -14,7 +15,7 @@ export default function Description() {
     <>
     <ThemeProvider theme={theme}>
       <Typography paragraph>
-        I'm currently a second year Computing (Artificial Intelligence and Machine Learning) student at Imperial College London.
+        I'm currently a second year Computing (MEng) student at Imperial College London.
       </Typography>
 
       <Typography paragraph>
@@ -30,6 +31,10 @@ export default function Description() {
 
       <Typography paragraph>
         Outside of computing, I enjoy playing table tennis, listening to music (I'm an IEM enthusiast!) and reading a good book from time to time.
+      </Typography>
+
+      <Typography paragraph>
+        If you're a recruiter, here are the essential links:
       </Typography>
     </ThemeProvider>
     </>

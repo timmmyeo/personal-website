@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
         <Typography variant="h3" component="p" gutterBottom style={{fontFamily: 'Open Sans'}}>
-          Hi There! I'm Tim.
+          Welcome!
         </Typography>
 
 
@@ -19,7 +19,7 @@ export default function Home() {
           
           {/* <Navlinks /> */}
 
-          <Grid item xs={12}>
+          <Grid item xs={12} align='left'>
             <Description />
           </Grid>
 

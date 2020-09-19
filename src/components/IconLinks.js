@@ -12,7 +12,7 @@ export default function IconLinks() {
   return (
     <>
       <Link href={CV}>
-        <IconButton color="primary" aria-label="CV">
+        <IconButton color="primary" aria-label="CV" >
           <DescriptionIcon />
         </IconButton>
       </ Link>
