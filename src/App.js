@@ -1,25 +1,51 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Base from "./components/Base"
+import CssBaseline from "@material-ui/core/CssBaseline";
+import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import ParticlesBg from 'particles-bg'
+
+
+const themeLight = createMuiTheme({
+  palette: {
+    background: {
+      default: "#222222"
+    }
+  }
+});
+
+// let config = {
+//       num: [4, 7],
+//       rps: 0.1,
+//       radius: [5, 40],
+//       life: [1.5, 3],
+//       v: [2, 3],
+//       tha: [-40, 40],
+//       // body: "./img/icon.png", // Whether to render pictures
+//       // rotate: [0, 20],
+//       alpha: [0.6, 0],
+//       scale: [1, 0.1],
+//       position: "center", // all or center or {x:1,y:1,width:100,height:100}
+//       color: ["random", "#ff0000"],
+//       cross: "dead", // cross or bround
+//       random: 15,  // or null,
+//       g: 5,    // gravity
+//       // f: [2, -1], // force
+//       onParticleUpdate: (ctx, particle) => {
+//           ctx.beginPath();
+//           ctx.rect(particle.p.x, particle.p.y, particle.radius * 2, particle.radius * 2);
+//           ctx.fillStyle = particle.color;
+//           ctx.fill();
+//           ctx.closePath();
+//       }
+//     };
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MuiThemeProvider theme={themeLight}>
+      {/* <CssBaseline /> */}
+      <ParticlesBg type="cobweb" num={(window.innerHeight * window.innerWidth) / 12500} bg={true} color="#4B0082" />
+      <Base />
+    </MuiThemeProvider>
   );
 }
 
