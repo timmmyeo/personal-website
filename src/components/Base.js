@@ -72,7 +72,7 @@ export default function FullWidthGrid() {
             style={{ transformOrigin: "bottom"}}
             {...(contentFade ? { timeout: 1000 } : {})}
           >
-            <Paper style={{backgroundColor: 'transparent'}}>
+            <Paper style={{backgroundColor: 'transparent', boxShadow: 'none'}}>
               <Avatar alt="Timothy Yeo" src={Picture} className={classes.large} />
             </ Paper>
           </ Grow>
@@ -84,7 +84,7 @@ export default function FullWidthGrid() {
             style={{ transformOrigin: "bottom"}}
             {...(contentFade ? { timeout: 1000 } : {})}
           >
-          <Paper style={{backgroundColor: 'transparent'}}>
+          <Paper style={{backgroundColor: 'transparent', boxShadow: 'none'} }>
             <Home />
           </Paper>
           </Grow>
