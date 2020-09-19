@@ -53,7 +53,7 @@ export default function FullWidthGrid() {
         style={{ transformOrigin: "bottom"}}
         {...(navbarFade ? { timeout: 1000 } : {})}
       >
-        <Paper style={{backgroundColor: 'transparent'}}>
+        <Paper style={{backgroundColor: 'transparent', background: "rgba(100, 149, 237, 0.3) "} }>
           <Navbar />
         </Paper>
       </Grow>

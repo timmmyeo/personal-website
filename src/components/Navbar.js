@@ -10,7 +10,7 @@ import { makeStyles } from '@material-ui/core/styles';
 export default function ProminentAppBar() {
   return (
     <>
-      <Typography variant="h2" align="center" style={{fontFamily: "Dancing Script", background: "rgba(100, 149, 237, 0.3) " }} >
+      <Typography variant="h2" align="center" style={{fontFamily: "Dancing Script"}} >
         Timothy Yeo
       </Typography>
     </>
