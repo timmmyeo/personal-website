@@ -6,30 +6,53 @@ import IconButton from '@material-ui/core/IconButton';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import CV from '../files/CV.pdf';
+import { makeStyles } from '@material-ui/core/styles';
+import Tooltip from '@material-ui/core/Tooltip';
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    background: "rgba(0, 0, 0, 0)",
+    '&:hover': {
+       background: "rgba(160, 163, 253, 0.7)",
+    },
+  }
+}));
 
 export default function IconLinks() {
+  const classes = useStyles();
+  
   return (
     <>
       <Link href={CV}>
-        <IconButton color="primary" aria-label="CV" >
-          <DescriptionIcon />
-        </IconButton>
+        <Tooltip title="CV">
+          <IconButton color="primary" aria-label="CV" className={classes.root}>
+            <DescriptionIcon fontSize="large" />
+          </IconButton>
+        </Tooltip>
       </ Link>
+
         <Link href="https://github.com/timmmyeo">
-          <IconButton color="primary" aria-label="GitHub">
-            <GitHubIcon />
-          </IconButton>
+          <Tooltip title="GitHub">
+            <IconButton color="primary" aria-label="GitHub" className={classes.root}>
+              <GitHubIcon fontSize="large"/>
+            </IconButton>
+          </Tooltip>
         </ Link>
+
         <Link href="https://www.linkedin.com/in/timothy-yeo-399326117/">  
-          <IconButton color="primary" aria-label="LinkedIn">
-              <LinkedInIcon />
-          </IconButton>
+          <Tooltip title="LinkedIn">
+            <IconButton color="primary" aria-label="LinkedIn" className={classes.root}>
+                <LinkedInIcon fontSize="large" />
+            </IconButton>
+          </Tooltip>
         </ Link>
+
         <Link href="mailto:timothyyeo121@gmail.com">  
-          <IconButton color="primary" aria-label="Email">
-              <EmailIcon />
-          </IconButton>
+          <Tooltip title="Email">
+            <IconButton color="primary" aria-label="Email" className={classes.root}>
+                <EmailIcon fontSize="large"/>
+            </IconButton>
+          </Tooltip>
         </ Link>
     </>
   )

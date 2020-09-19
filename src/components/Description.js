@@ -19,7 +19,7 @@ export default function Description() {
       </Typography>
 
       <Typography paragraph>
-        From a young age, I've always enjoyed dabbling in tech and computers. 
+        From a young age, I've always enjoyed playing about with tech and computers. 
         Throughout this time, I've programmed in multiple different languages including Java, Python, C, JavaScript and Haskell. 
         I enjoy web development and have experience in both front end as well as back end frameworks such as React and Flask.
         I've also dabbled in AI, and love reading about the impact AI will have on our futures, as it becomes ever prominent in our lives.
@@ -34,7 +34,7 @@ export default function Description() {
       </Typography>
 
       <Typography paragraph>
-        If you're a recruiter, here are the essential links:
+        If you're a recruiter, here is my CV and other essential links:
       </Typography>
     </ThemeProvider>
     </>
